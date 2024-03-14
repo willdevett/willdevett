@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Will's Midi Effect</title>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+    <script src="script.js" type="module"></script>
+    <style>
+      body {
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      body {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Midi Delay and Transposer</h1>
+    <h2>Will DeVett</h2>
+    <div>
+      <label for="dropdown-ins">Select Input:</label>
+      <select id="dropdown-ins"></select>
+    </div>
+    <div>
+      <label for="dropdown-outs">Select Output:</label>
+      <select id="dropdown-outs"></select>
+    </div>
+    <div>
+      <label for="range-slider">Time Slider:</label>
+      <input type="range" id="repeats-slider" min="1" max="5" />
+    </div>
+    <div>
+      <label for="range-slider">Tranpose:</label>
+      <input type="range" id="transpo-slider" min="0" max="27" />
+    </div>
+    <p1>
+      The MIDI delay effect will repeat your signal. Use the time slider to
+      adjust the delay time. The transposer changes the range of notes played by
+      your piano. Adjust with the transposition slider</p1
+    >
+  </body>
+</html>
